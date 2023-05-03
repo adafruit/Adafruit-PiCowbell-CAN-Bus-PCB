@@ -32,6 +32,7 @@ Please Note! There are a lot of possible configurations, and we stock various he
 2. Use the Pico Socket Headers if you want to plug directly in and have a nice solid connection that doesn't have any poking-out-bits.
 3. Use the Short Socket Headers for a very slim but pluggable design; note that you'll want to trim down the Pico's headers or use the short plug headers on the Pico to have a skinny sandwich.
 4. Solder the PCB directly to the Pico headers - of course, this is very compact and inexpensive, but you won't be able to remove the PiCowbell.
+
 The PiCowbell CAN Bus provides you with:
 
 * Right angle JST SH connector for I2C / Stemma QT / Qwiic connection. Provides 3V, GND, IO4 (SDA), and IO5 (SCL)
@@ -39,6 +40,7 @@ The PiCowbell CAN Bus provides you with:
 * Every pad on the 'bell has a duplicate hole pad next to them for solder-jumpering
 * The ground pads have white silkscreen rectangles to easily identify, plus one long ground strip near the reset button
 * Gold-plated pads for easy soldering
+
 If using the Philhower Arduino core, the Wire peripheral is already set up to use IO4 and IO5, and SPI is default on IO16, IO18 and IO19. If using CircuitPython or MicroPython, you'll need to let the code know to look at 4+5 for SDA+SCL pins, and configure the SPI port for SCK=18, MOSI=19 and MISO=16.
 
 ### License
